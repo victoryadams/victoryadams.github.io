@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+
+/*audio player*/
+#audioplayer{
+  width: 60px;
+  height: 700px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#pButton{
+    height: 80px; 
+    width: 80px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline:none;
+}
+
+.play{background: url('../images/play.svg') ;}
+.pause{background: url('../images/pause.svg') ;}
+
+#timeline{
+  width: 2px;
+  height: 650px;
+  border-radius: 15px;
+  background: rgba(0,0,0,.3);
+  z-index: 1; 
+}
+
+#playhead{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: rgba(0, 0, 0,1);
+  z-index: 2;
+}
+
+/*box animation*/
+.rotatingBoxes{
+  width: 600px;
+  height: 600px;
+}
+
+#box1 {
+  width: 80%;
+  height: 80%;
+  background-color: yellow;
+  opacity: 0.5;
+  position: absolute;
+  top: 10px;
+}
+
+#box2 {
+  width: 80%;
+  height: 80%;
+  background-color: red;
+  opacity: 0.5;
+  position: absolute;
+  top: 20px;
+}
+
+#box3 {
+  width: 80%;
+  height: 80%;
+  background-color: green;
+  opacity: 0.5;
+  position: absolute;
+  top: 30px;
+}
+
+#box4 {
+  width: 80%;
+  height: 80%;
+  background-color: blue;
+  position: absolute;
+  top: 40px;
+}
+
+.rotatingBoxes:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
